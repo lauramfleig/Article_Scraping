@@ -17,6 +17,16 @@ let HeadlineSchema = new Schema({
     url: {
         type: String,
         required: true
+    },
+
+    note: {
+        type: Schema.Types.ObjectId,
+        ref: "Note"
+    },
+
+    saved: {
+        type: Boolean,
+        default: false
     }
 });
 
