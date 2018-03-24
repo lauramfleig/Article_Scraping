@@ -10,7 +10,7 @@ const fs = require("fs");
 // Require all models
 const db = require("./models");
 
-const PORT = process.env || 3000;
+const PORT = process.env.PORT || 3000;
 
 // Initialize Express
 const app = express();
@@ -29,7 +29,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Scraping_HW";
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, {
-    useMongoClient: true
+   
 });
 
 // Scrape data from one site and place it into the mongodb db
