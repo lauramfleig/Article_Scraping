@@ -10,7 +10,7 @@ const fs = require("fs");
 // Require all models
 const db = require("./models");
 
-const PORT = provess.env || 3000;
+const PORT = process.env || 3000;
 
 // Initialize Express
 const app = express();
