@@ -2,7 +2,7 @@
   "name": "article_scraping",
   "version": "1.0.0",
   "description": "Web App that uses Cheerio and MongoDB to scrape web articles and allows user commenting",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
